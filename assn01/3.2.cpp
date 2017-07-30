@@ -1,6 +1,4 @@
 #include <iostream>
-#include <algorithm>
-#include <iterator>
 
 using namespace std;
 
@@ -45,14 +43,6 @@ int main()
 	}
 	cout << "mean: " << mean/numberOfIntegers;
 	
-
-
-	
-	//print array	
-	
-	// calculate high low and mean
-		
-	//print out high low and mean
 	cout << endl;
     cout << "done";
     return 0;
