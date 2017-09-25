@@ -9,6 +9,6 @@ int main(){
     return 0;
 }
 
-int sum(const int x, const int y, const int z){
+int sum(const int x, const int y, const int z){//added const in z
     return x + y + z;
 }
