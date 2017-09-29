@@ -1,9 +1,9 @@
 #include <iostream>
 
 int sumNumbers(int size, int arrayOfNums[]){
-    int sums = 0;
+    int sums;
     for(int i=0;i<size;i++){
-        arrayOfNums[i] += sums;
+        sums += arrayOfNums[i];
     }
     return sums;
 }
@@ -13,7 +13,7 @@ int main(){
     std::cin >> size;
     int arrayOfNums[size];
     std::cout << "Please enter numbers: " << std::endl;
-    int numForArray = 0;
+    int numForArray;
     for(int i=0;i<size;i++){
         std::cin >> numForArray;
         arrayOfNums[i] = numForArray;
