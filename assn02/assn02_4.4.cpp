@@ -1,6 +1,8 @@
 #include <iostream>
 
-int sum(int const a, int const b, int const c=0, int const d=0){
+
+//hmm I inadvertently switched the order of int and const.  how does this change things?
+int sum(const int a, const int b, const int c=0, const int d=0){
     return a + b + c + d;
 }
 int sum(const int x, const int y, const int z){
