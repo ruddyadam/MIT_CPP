@@ -1,13 +1,13 @@
 #include <iostream>
 
-int numOfNums;
+int size;
 std::cout << "How many numbers will you be adding? " + std::endl;
-std::cin >> numofNums;
-int arrayOfNums[numOfNums];
+std::cin >> size;
+int arrayOfNums[size];
 
-int sumArray(int numOfNums, int arrayOfNums){
+int sumNumbers(int size, int arrayOfNums){
     int sums = 0;
-    for(int i=0;i<numofNums;i++){
+    for(int i=0;i<size;i++){
         arrayOfNums[i] += sums;
     }
     return sums;
@@ -15,9 +15,9 @@ int sumArray(int numOfNums, int arrayOfNums){
 int main(){
     std::cout << "Please enter numbers: " + std::endl;
     int numForArray = 0;
-    for(int i=0,i<numOfNums,i++){
+    for(int i=0,i<size,i++){
         std::cin >> numForArray;
         arrayOfNums[i] = numForArray;
     }
-    std::cout << sumArray(numOfNums, arrayOfNums);
+    std::cout << addNumbers(size, arrayOfNums);
 }
