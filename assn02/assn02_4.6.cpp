@@ -1,12 +1,10 @@
 #include <iostream>
 
-int sumOfNumbers;
-int iterator = 0;
-
 int sumNumbers(int size, int *arrayOfNumbers){
+    int sumOfNumbers;
+
     if(*iterator<*size){
-        *sumofNumbers += *arrayOfNumbers[*iterator];
-        *iterator += 1;
+        *sumofNumbers += *arrayOfNumbers[];
         sumNumbers(size, *arrayOfNumbers);
     }
     else{
