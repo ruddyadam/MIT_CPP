@@ -1,11 +1,17 @@
 #include <iostream>
 
-int sumNumbers(int size, int arrayOfNumbers[]){
-    int sumOfNumbers;
-    for(int i=0;i<size;i++){
-        sumofNumbers += arrayOfNumbers[i];
+int sumOfNumbers;
+int iterator = 0;
+
+int sumNumbers(int size, int *arrayOfNumbers){
+    if(*iterator<*size){
+        *sumofNumbers += *arrayOfNumbers[*iterator];
+        *iterator += 1;
+        sumNumbers(size, *arrayOfNumbers);
     }
-    return sums;
+    else{
+        return sumOfNumbers;
+    }
 }
 int main(){
     int size;
@@ -18,5 +24,5 @@ int main(){
         std::cin >> number;
         arrayOfNumbers[i] = number;
     }
-    std::cout << sumNumbers(size, arrayOfNumbers);
+    std::cout << sumNumbers(size, &arrayOfNumbers[0]);
 }
