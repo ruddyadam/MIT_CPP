@@ -1,14 +1,19 @@
 #include <iostream>
 
-int sumNumbers(int size, int *arrayOfNumbers){
-    int sumOfNumbers;
+int printArray(int size, int *array){
+    for(int i=0;i<size;i++){
+        std::cout << array[i] << endl;
+    }
+}
 
-    if(*iterator<*size){
-        *sumofNumbers += *arrayOfNumbers[];
-        sumNumbers(size, *arrayOfNumbers);
+int sumNumbers(int size, int *arrayOfNumbers){
+    if (size = 0){
+
+        return 0;
     }
     else{
-        return sumOfNumbers;
+
+        return arrayOfNumbers[size-1] + sumNumbers(size-1, arrayOfNumbers);
     }
 }
 int main(){
@@ -21,6 +26,9 @@ int main(){
     for(int i=0;i<size;i++){
         std::cin >> number;
         arrayOfNumbers[i] = number;
+        printArray(size, arrayOfNumbers);
     }
+    //printArray(size, arrayOfNumbers);
+
     std::cout << sumNumbers(size, &arrayOfNumbers[0]);
 }
