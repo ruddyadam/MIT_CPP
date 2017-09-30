@@ -2,12 +2,12 @@
 
 int printArray(int size, int *array){
     for(int i=0;i<size;i++){
-        std::cout << array[i] << endl;
+        std::cout << array[i] << std::endl;
     }
 }
 
 int sumNumbers(int size, int *arrayOfNumbers){
-    if (size = 0){
+    if (size == 0){
 
         return 0;
     }
@@ -26,9 +26,8 @@ int main(){
     for(int i=0;i<size;i++){
         std::cin >> number;
         arrayOfNumbers[i] = number;
-        printArray(size, arrayOfNumbers);
     }
-    //printArray(size, arrayOfNumbers);
+//    printArray(size, arrayOfNumbers);
 
     std::cout << sumNumbers(size, &arrayOfNumbers[0]);
 }
