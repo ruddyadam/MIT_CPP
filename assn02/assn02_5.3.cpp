@@ -2,7 +2,7 @@
 #include <ctime>
 #include <cmath>
 
-//This program is a Monte Carlo technique for calculating Pi
+//This program is a Monte Carlo technique for estimating Pi
 
 using namespace std;
 
