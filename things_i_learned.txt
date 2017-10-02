@@ -1,0 +1,7 @@
+10-2-17
+I learned that rand() acts differently than I would expect.  Every time you call rand(),
+it uses the last seed.  Unless you manually change the seed, the sequence produced
+by rand() will be the same each time the program is run.  So the answer is to set srand
+to something like the current time since epoch in seconds.
+
+I am learning more about passing variables by reference and using pointers in functions.
