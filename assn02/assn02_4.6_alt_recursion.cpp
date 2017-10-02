@@ -1,11 +1,9 @@
 #include <iostream>
 
 int printArray(int size, int *array){
-    std::cout << "Array: [";
-    for(int i=0;i<size;i++){
+     for(int i=0;i<size;i++){
         std::cout << array[i];
     }
-    std::cout << "]" << std::endl;
 }
 
 int sumNumbers(int iterator, int size, int *arrayOfNumbers){
