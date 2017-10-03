@@ -5,3 +5,7 @@ by rand() will be the same each time the program is run.  So the answer is to se
 to something like the current time since epoch in seconds.
 
 I am learning more about passing variables by reference and using pointers in functions.
+
+I learned how to change an into to a float (float)(variable or number).
+
+

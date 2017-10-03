@@ -1,0 +1,14 @@
+previous questions:
+-why doesn't rand() give me a random number? 
+and why is it the same every time I run the program?
+
+-i don't underst and the syntax of references and pointers 
+when defining and calling functions.  also the body of the function.
+
+-const int or int const?
+
+-what programs should I write first to start building experience?
+
+-what is it like to program 8 hours a day?
+
+-

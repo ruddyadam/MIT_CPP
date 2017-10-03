@@ -1,5 +1,7 @@
 #include <iostream>
 
+//just learning recursion and pointers
+
 int printArray(int size, int *array){
     std::cout << "Array: [";
     for(int i=0;i<size;i++){
