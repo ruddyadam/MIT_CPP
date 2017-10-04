@@ -8,14 +8,14 @@ void printArray(int array[], int size){
 }
 
 void reverse(int array[], int size){
-    int tempVar;
+    int tempElement;
     for(int i=0;i<size/2;i++){  // "/2" because when you have swapped half the array 
                                 //with the other half, it is reversed.
-        tempVar = array[i];
+        tempElement = array[i];
         //std::cout << tempVar << std::endl;    //testing
         array[i] = array[size-1-i];
         //printArray(array, size);              //testing
-        array[size-1-i] = tempVar;
+        array[size-1-i] = tempElement;
         //printArray(array, size);              //testing
     }
 }
@@ -32,7 +32,7 @@ int main(){
 
 //ideas:
 //double the size of the array.
-//append the items onto the last half in revers order.
+//append the items onto the last half in reverse order.
 //delete the first half.
 
 #if 0

@@ -8,4 +8,7 @@ I am learning more about passing variables by reference and using pointers in fu
 
 I learned how to change an into to a float (float)(variable or number).
 
+Type "auto" will let the compiler determine the variable type.
 
+assn02_6.2.cpp - reversing an array took me a while.  Makes you really think about what
+you have to work with. 
