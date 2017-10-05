@@ -21,13 +21,21 @@ void reverse(int array[], int size){
 }
 
 int main(){
-    int array[] = {1,2,3,4,5,6,7};
-    int size = std::end(array) - std::begin(array); //calculates size
-    std::cout << "The original array is: "; 
-    printArray(array, size);
-    reverse(array, size);
-    std::cout << "The reversed array is: ";
-    printArray(array, size);
+    int evenArray[] = {1,2,3,4,5,6,7,8};
+    int oddArray[] = {1,2,3,4,5,6,7};
+    int evenSize = std::end(evenArray) - std::begin(evenArray); //calculates size of array
+    int oddSize = std::end(oddArray) - std::begin(oddArray); //calculates size of array
+    std::cout << "The original even array is: "; 
+    printArray(evenArray, evenSize);
+    std::cout << "The original odd array is: "; 
+    printArray(oddArray, oddSize);    
+    reverse(evenArray, evenSize);
+    reverse(oddArray, oddSize);
+
+    std::cout << "The reversed even array is: ";
+    printArray(evenArray, evenSize);
+    std::cout << "The reversed odd array is: ";
+    printArray(oddArray, oddSize);
 }
 
 //ideas:
