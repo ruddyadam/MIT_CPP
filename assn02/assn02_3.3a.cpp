@@ -2,8 +2,7 @@
 
 using namespace std; //added namespace
 
-void doubleNumber(int num);//added prototype with arg
-                           //why does this not need a & in the prototype
+void doubleNumber(int& num);//added prototype with arg&
                            
 int main(){
     int num = 35;
@@ -12,6 +11,6 @@ int main(){
     return 0;
 }
 
-void doubleNumber(int& number){ //moved tthis down, added &arg
+void doubleNumber(int& number){ //moved this down, added &arg
     number = number * 2;
 }

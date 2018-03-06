@@ -3,15 +3,8 @@
 
 #include <iostream>
 
-void transpose(int input[][LENGTH], int output[][WIDTH]){
-    for(int l=0; l<LENGTH; l++){
-        for(int w=0; w<WIDTH; w++){
-         output[l][w] = input[w][l];
-         std::cout << "[" << output[i][j] << "]";
-        }
-    std::cout << endl;
-    }    
-}
+void transpose(const int input[][LENGTH], int output[][WIDTH]);
+
 
 int main(){
 
@@ -29,8 +22,8 @@ int main(){
     std::cin >> LENGTH;
     std::cout << std::endl;
 
-    int input[WIDTH][LENGTH];
-    int output[LENGTH][WIDTH];
+    int input[2][3];
+    int output[3][2];
 
     std::cout << "Enter elements:" << std::endl;
     for(int w=0; w<WIDTH; w++){
@@ -51,7 +44,7 @@ int main(){
 
     std::cout << std::endl;
     std::cout << "Transposed" << std::endl;
-    int transpose(input[WIDTH][LENGTH], output[LENGTH][WIDTH]);
+    int transpose(input[][LENGTH], output[][WIDTH]);
 #if 0    
     for(int l=0; l<LENGTH; l++){
         for(int w=0; w<WIDTH; w++){
@@ -64,4 +57,15 @@ int main(){
 //#if 0
 
 //#endif
+return 0;
+}
+
+void transpose(const int input[][LENGTH], int output[][WIDTH]){
+    for(int l=0; l<LENGTH; l++){
+        for(int w=0; w<WIDTH; w++){
+         output[l][w] = input[w][l];
+         std::cout << "[" << output[l][w] << "]";
+        }
+    std::cout << std::endl;
+    }    
 }

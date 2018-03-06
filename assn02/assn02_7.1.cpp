@@ -1,11 +1,25 @@
 #include <iostream>
-//funciton that returns the lenth of a string
+//function that returns the lenth of a string
 
 
-int lengthOfString(char* string){
-    
+int lengthOfString(const char* myString);
+
+
+int main(){
+
+    const char* myString = "billybob";
+    std::cout << lengthOfString(myString) << std::endl;
+
+    return 0;
 }
 
-main(){
-
+int lengthOfString(const char* myString){
+    
+    int myLen = 0;
+    
+    while(*myString){
+        *myString++;
+        myLen++;
+    }
+    return myLen;
 }
