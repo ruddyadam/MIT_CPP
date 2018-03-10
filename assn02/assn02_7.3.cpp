@@ -17,7 +17,7 @@ int main(){
     
     int second = 2;
 
-    ptrSwapValues(&first, &second); //when the function takes ptr args, pass &s
+    ptrSwapValues(&first, &second); //when the called function takes ptr args, caller passes &s
 
     std::cout << "Was 1, is " << first << std::endl;
     std::cout << "Was 2, is " << second << std::endl;
