@@ -1,0 +1,40 @@
+This document is an insight journal for the MIT CPP course.
+For each problem, I will state the (a) the problem or question I solved and (b) the solution and any insight from this exercise.
+
+MIT CPP Assignment 1
+
+Problem 2.1
+a. output "Hello World!" using a const char *.
+b. this exercise taught me about mutability and introduced me to pointers.
+
+Problem 2.2 (for, while, do/while)
+a. output "Hello World!" using for, while, and do/while loops
+b. I learned the different ways to create a loop, and the benefits of each.
+
+Problem 3.1
+a. What happens if we declare the same name twice within a block, giving it two different meanings?
+b. error: conflicting declaration, will not compile.  This introduced me to the necessity for unique variables within the same scope.
+
+Problem 3.1.2
+a. What happens if we declare an identifier in a block, and then redeclare that same identifier in a block nested within that block?
+b. the output is that of the outermost variable.  This introduced me to scope.  
+
+Problem 3.1.3
+a. Suppose an identifier has two different declarations, one in an outer block and one in a nested
+inner block. If the name is accessed within the inner block, which declaration is used?
+b. The inner block - the one within the scope of the cout.  This further reinforces scope.
+
+Problem 3.1.4
+a. Suppose an identifier has two different declarations, one in an outer block and one in a nested inner block. If the name is accessed within the outer block, but after the inner block, which declaration is used?
+b. The outer block - the one within the scope of the cout.  The identifier is not used outside its scope.
+
+Problem 3.1.5
+a. Below is a sample program that will not compile. Why not? By moving which line can we get the code to compile?
+b. Move the #include <iostream> to the top, so that cout declared before it is used.
+
+Problem 3.2
+a. Given a list of N integers, find its mean (as a double), maximum value, minimum value, and range.
+b. 
+
+
+
